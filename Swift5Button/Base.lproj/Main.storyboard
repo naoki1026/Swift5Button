@@ -54,9 +54,12 @@
                                 <rect key="frame" x="123" y="269" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="key"/>
+                                <connections>
+                                    <action selector="change:" destination="hqL-r1-jvf" eventType="touchUpInside" id="7SF-Ox-rNw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="次の画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-gf-EmL">
-                                <rect key="frame" x="111" y="95" width="152" height="36"/>
+                                <rect key="frame" x="37" y="95" width="300" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -66,6 +69,9 @@
                         <color key="backgroundColor" red="0.98084574940000002" green="0.62997734400000005" blue="0.70638965860000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="yDM-dO-ee5"/>
                     </view>
+                    <connections>
+                        <outlet property="changeLabel" destination="KdG-gf-EmL" id="T4p-om-j8Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7R-5i-JAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
